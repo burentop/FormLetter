@@ -6,10 +6,12 @@
 //  Copyright © 2016 Brent Perry. All rights reserved.
 //
 
-#include <iostream>
+#include "../../../std_lib_facilities.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int main()
+{
+    cout << "Please enter the name of the person you want to write to (followed by 'enter'): \n";
+    string first_name;
+    cin >> first_name;
+    cout << "Dear " << first_name << ",\n";
 }
