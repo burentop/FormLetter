@@ -14,4 +14,6 @@ int main()
     string first_name;
     cin >> first_name;
     cout << "Dear " << first_name << ",\n";
+    cout << "\tHow are you? I am fine. I miss you.\n";
+    cout << "I have decided to learn C++.\n";
 }
