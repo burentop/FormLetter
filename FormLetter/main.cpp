@@ -14,11 +14,15 @@ int main()
     string first_name;
     string friend_name;
     char friend_sex {0};
+    int age;
     cin >> first_name;
+    cout << "Please enter the age of the person: ";
+    cin >> age;
     cout << "Please type the name of another friend: ";
     cin >> friend_name;
     cout << "Enter a 'm' if that friend is male, and 'f' if female: ";
     cin >> friend_sex;
+    
     cout << "Dear " << first_name << ",\n";
     cout << "\tHow are you? I am fine. I miss you.\n";
     cout << "I have decided to learn C++.\n";
@@ -27,4 +31,7 @@ int main()
         cout << "If you see " << friend_name << " please ask him to call me.\n";
     } else if (friend_sex == 'f')
         cout << "If you see " << friend_name << " please ask her to call me.\n";
+    cout << "I hear you just had a birthday and you are " << age << " years old.";
+    if (age <= 0 || age >= 110)
+        simple_error(" You're kidding!");
 }
