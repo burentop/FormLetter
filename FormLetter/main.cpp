@@ -31,7 +31,13 @@ int main()
         cout << "If you see " << friend_name << " please ask him to call me.\n";
     } else if (friend_sex == 'f')
         cout << "If you see " << friend_name << " please ask her to call me.\n";
-    cout << "I hear you just had a birthday and you are " << age << " years old.";
+    cout << "I hear you just had a birthday and you are " << age << " years old.\n";
     if (age <= 0 || age >= 110)
         simple_error(" You're kidding!");
+    if (age < 12)
+        cout << "Next year you will be " << age++ << ".\n";
+    else if (age == 17)
+        cout << "Next year you will be able to vote.\n";
+    else if (age > 70)
+        cout << "I hope you are enjoying retirement.\n";
 }
